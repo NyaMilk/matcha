@@ -1,0 +1,38 @@
+:root {
+  --color-light-grey: #cfd7e3;
+  --color-middle-grey: #787878;
+  --color-dark-grey: #2f2f2f;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-blue: #8db4e8;
+  --color-red: #eb5b88;
+  --border-radius: 0.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 75rem;
+  font-size: 0.8125rem;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.fill {
+  height: 10rem;
+  fill: var(--color-blue);
+}
+
+.stroke {
+  height: 10rem;
+  stroke: var(--color-red);
+}
