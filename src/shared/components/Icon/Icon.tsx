@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SVGProps } from "react";
+import { FunctionComponent, SVGProps } from "react";
 import { ReactComponent as BellIcon } from "../../../assets/icons/bell.svg";
 import { ReactComponent as CloseIcon } from "../../../assets/icons/close.svg";
 import { ReactComponent as DoneIcon } from "../../../assets/icons/done.svg";

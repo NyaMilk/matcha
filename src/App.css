@@ -36,3 +36,8 @@ textarea {
   height: 10rem;
   stroke: var(--color-red);
 }
+
+/*delete*/
+.customDropdown {
+  width: 3rem;
+}
