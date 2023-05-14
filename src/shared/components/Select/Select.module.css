@@ -12,7 +12,6 @@
   line-height: 2rem;
 }
 
-/*.item input + span,*/
-.item label :not(span) {
+.item label {
   margin-left: 1rem;
 }

@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 import {
+  Checkbox,
   Dropdown,
   Icon,
   IconsName,
+  Radio,
   SelectType,
 } from "./shared/components/components";
 
@@ -36,19 +38,19 @@ function App() {
       <Icon className="stroke" name={IconsName.SUN} />
       <Icon className="fill" name={IconsName.USER} />
 
-      {/*<Radio>Test</Radio>*/}
-      {/*<Radio hidden>Test</Radio>*/}
-      {/*<Radio disabled>Test</Radio>*/}
+      <Radio>Test</Radio>
+      <Radio hidden>Test</Radio>
+      <Radio disabled>Test</Radio>
 
-      {/*<Checkbox name="test1">Test</Checkbox>*/}
-      {/*<Checkbox name="test3" hidden/>*/}
-      {/*<Checkbox name="test4" hidden>*/}
-      {/*    Test*/}
-      {/*</Checkbox>*/}
-      {/*<Checkbox name="test5" disabled/>*/}
-      {/*<Checkbox name="test5" disabled>*/}
-      {/*    Test*/}
-      {/*</Checkbox>*/}
+      <Checkbox name="test1">Test</Checkbox>
+      <Checkbox name="test3" hidden />
+      <Checkbox name="test4" hidden>
+        Test
+      </Checkbox>
+      <Checkbox name="test5" disabled />
+      <Checkbox name="test5" disabled>
+        Test
+      </Checkbox>
 
       {/*<Select list={listItems}/>*/}
       {/*<Select list={listItems} defaultChecked={checkedListItems}/>*/}
@@ -60,6 +62,7 @@ function App() {
         list={listItems}
         activated={isShowDropdown}
         onClick={handleDropdownModal}
+        hidden
       />
 
       <Dropdown
@@ -68,6 +71,7 @@ function App() {
         activated={isShowDropdownRadio}
         onClick={handleDropdownModalRadio}
         type={SelectType.SINGLE}
+        hidden
       />
     </div>
   );
